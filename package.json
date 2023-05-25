@@ -1,13 +1,15 @@
 {
-  "name": "update_system",
+  "name": "updated-auto-refresh",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Refresh the page when the page is updated",
+  "module": "./lib/bundle.js",
+  "types": "./lib/index.d.ts",
+  "files": ["lib"],
   "scripts": {
     "build": "tsc --declaration --emitDeclarationOnly  && node esbuild.config.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["auto-refresh"],
+  "author": "fancy_fish",
   "license": "ISC",
   "dependencies": {
     "esbuild": "0.17.19"
